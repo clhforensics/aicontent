@@ -1,0 +1,48 @@
+name: Build PDF reading editions
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'politics/2026-midterms/*.md'
+      - 'scripts/build_pdfs.py'
+      - '.github/workflows/build-pdfs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF renderer
+        run: pip install 'Markdown==3.10' 'weasyprint==68.1'
+      - name: Generate PDFs
+        run: python scripts/build_pdfs.py
+      - name: Verify PDFs
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          directory = Path("politics/2026-midterms")
+          PDFs = sorted(directory.glob("*.pdf"))
+          assert len(PDFs) == 3, f"Expected 3 PDFs, got {len(PDFs)}"
+          for path in PDFs:
+              content = path.read_bytes()
+              assert content.startswith(b"%PDF-") and len(content) > 3000, path
+              print(path, len(content))
+          PY
+      - name: Commit generated editions
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add politics/2026-midterms/*.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "Build PDF reading editions from canonical Markdown"
+            git push
+          fi
