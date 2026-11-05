@@ -4,6 +4,22 @@
 
 This public repository collects long-form AI-generated documents and their sources, preserving the reporting snapshot, publication date, and later corrections. The work is offered for **reading, scrutiny, citation checking, and discussion**; it is not presented as firsthand journalism.
 
+## Why This Repository Exists
+
+This repository is a personal collection of ideas, questions, research, and analysis developed through collaboration with artificial intelligence.
+
+I've always been curious about how things work, why events unfold the way they do, and what they might mean for the future. Sometimes that curiosity leads to a quick question. Other times, it leads to hours of exploration and a deeper examination of a subject.
+
+AI gives me a way to turn those explorations into something tangible—articles, briefings, reports, and perspectives that might otherwise remain unfinished thoughts or conversations.
+
+The subjects will vary. The perspectives may evolve. I don't expect every conclusion to be correct, and I welcome the opportunity to revisit ideas as new information emerges.
+
+This isn't an attempt to build a media company, establish myself as an authority, or attract a massive following.
+
+**It's simply a place for my curiosity to have a permanent home.**
+
+If someone else finds something here interesting, informative, or worth challenging, all the better.
+
 > **Editorial disclosure:** The documents are substantially AI-generated. They synthesize publicly reported information; they are not original field reporting. Automated drafts can contain errors. Readers should inspect the linked primary sources, especially for fast-moving election results and political claims.
 
 ## Library
