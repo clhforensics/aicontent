@@ -32,6 +32,8 @@ If someone else finds something here interesting, informative, or worth challeng
 | **A Wave Reaches Red America** | Nationwide election analysis with a deep Missouri spotlight | [Markdown](politics/2026-midterms/02-national-and-missouri-feature.md) | [PDF](politics/2026-midterms/02-national-and-missouri-feature.pdf) |
 | **The Republican Reckoning** | Republican-side post-election diagnosis, local and federal effects | [Markdown](politics/2026-midterms/03-republican-post-election-assessment.md) | [PDF](politics/2026-midterms/03-republican-post-election-assessment.pdf) |
 
+| **Missouri's Warning Lights Were Flashing** | Missouri case study: voter-led policy, early polling, suburban shifts, and 2027 watchlist | [Markdown](politics/2026-midterms/04-missouri-early-warning-signals.md) | [PDF](politics/2026-midterms/04-missouri-early-warning-signals.pdf) |
+
 **Reporting cutoff:** November 4, 2026. Election results described in these documents are preliminary, *not certified*. The reports intentionally preserve their original morning/evening viewpoints. See their individual notes and references.
 
 The printable editions are generated automatically from the Markdown sources; **Markdown is the canonical text**. PDFs may briefly lag the latest text commit while the publishing workflow runs.
