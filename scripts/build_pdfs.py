@@ -15,6 +15,7 @@ FILES = [
     "01-morning-executive-brief",
     "02-national-and-missouri-feature",
     "03-republican-post-election-assessment",
+    "04-missouri-early-warning-signals",
 ]
 
 CSS = """
@@ -24,7 +25,7 @@ CSS = """
   @bottom-right { content: counter(page); font: 9px Georgia,serif; color: #77818b; }
 }
 * { box-sizing: border-box; }
-body { font-family: Georgia, 'Liberation Serif', serif; color: #202a37; font-size: 11pt; line-height: 1.54; }
+img { max-width: 100%; height: auto; display: block; margin: 14px auto; break-inside: avoid; }\nbody { font-family: Georgia, 'Liberation Serif', serif; color: #202a37; font-size: 11pt; line-height: 1.54; }
 h1 { font-size: 27pt; line-height:1.12; letter-spacing:-.6px; color:#162638; border-top: 6px solid #bd8c47; padding-top: 17px; margin: 10px 0 18px; }
 h2 { font-family: 'Liberation Sans', Arial, sans-serif; font-size:14pt; margin: 24px 0 8px; color:#1d3c53; border-bottom: 1px solid #d7dee4; padding-bottom: 5px; break-after: avoid; }
 h3 { font-family: 'Liberation Sans',Arial,sans-serif; font-size:11.5pt; margin:18px 0 7px; color:#283b4d; break-after:avoid; }
