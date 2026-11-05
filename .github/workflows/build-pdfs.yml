@@ -31,7 +31,7 @@ jobs:
           from pathlib import Path
           directory = Path("politics/2026-midterms")
           PDFs = sorted(directory.glob("*.pdf"))
-          assert len(PDFs) == 3, f"Expected 3 PDFs, got {len(PDFs)}"
+          assert len(PDFs) == 4, f"Expected 4 PDFs, got {len(PDFs)}"
           for path in PDFs:
               content = path.read_bytes()
               assert content.startswith(b"%PDF-") and len(content) > 3000, path
