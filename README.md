@@ -38,6 +38,20 @@ If someone else finds something here interesting, informative, or worth challeng
 
 The printable editions are generated automatically from the Markdown sources; **Markdown is the canonical text**. PDFs may briefly lag the latest text commit while the publishing workflow runs.
 
+### Sports & basketball
+
+| Document | Angle | Read |
+|---|---|---|
+| **The NBA Is Winning the Numbers Game—and Losing Basketball** | Gather-step interpretation, the midrange jumper, flopping, and restoring competitive integrity | [Article overview](sports/basketball/README.md) |
+
+### Music & culture
+
+| Document | Angle | Read |
+|---|---|---|
+| **How Hip-Hop Learned to Sell Danger** | From creative battles to gangsta rap's commercialization and drill's platform-era incentives | [Article overview](culture/hip-hop/README.md) |
+
+*The two original six-page PDFs are not yet hosted; these are article overview pages, not full-text editions.*
+
 ## How to read or contribute
 
 - Open any Markdown link above to read directly in GitHub, with clickable source references.
