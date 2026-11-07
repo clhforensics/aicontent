@@ -40,17 +40,17 @@ The printable editions are generated automatically from the Markdown sources; **
 
 ### Sports & basketball
 
-| Document | Angle | Read |
-|---|---|---|
-| **The NBA Is Winning the Numbers Game—and Losing Basketball** | Gather-step interpretation, the midrange jumper, flopping, and restoring competitive integrity | [Article overview](sports/basketball/README.md) |
+| Document | Angle | Read | Printable PDF |
+|---|---|---|---|
+| **The NBA Is Winning the Numbers Game—and Losing Basketball** | Gather-step interpretation, the midrange jumper, flopping, and restoring competitive integrity | [Markdown](sports/basketball/the-nba-is-winning-the-numbers-game.md) | [PDF](sports/basketball/the-nba-is-winning-the-numbers-game.pdf) |
 
 ### Music & culture
 
-| Document | Angle | Read |
-|---|---|---|
-| **How Hip-Hop Learned to Sell Danger** | From creative battles to gangsta rap's commercialization and drill's platform-era incentives | [Article overview](culture/hip-hop/README.md) |
+| Document | Angle | Read | Printable PDF |
+|---|---|---|---|
+| **How Hip-Hop Learned to Sell Danger** | From creative battles to gangsta rap's commercialization and drill's platform-era incentives | [Markdown](culture/hip-hop/how-hip-hop-learned-to-sell-danger.md) | [PDF](culture/hip-hop/how-hip-hop-learned-to-sell-danger.pdf) |
 
-*The two original six-page PDFs are not yet hosted; these are article overview pages, not full-text editions.*
+*PDF reading editions are generated from the canonical Markdown by GitHub Actions. Their design differs from the original six-page editorial layouts.*
 
 ## How to read or contribute
 
