@@ -4,6 +4,8 @@ on:
     branches: [main]
     paths:
       - 'politics/2026-midterms/*.md'
+      - 'sports/basketball/*.md'
+      - 'culture/hip-hop/*.md'
       - 'scripts/build_pdfs.py'
       - '.github/workflows/build-pdfs.yml'
   workflow_dispatch:
@@ -36,12 +38,14 @@ jobs:
               content = path.read_bytes()
               assert content.startswith(b"%PDF-") and len(content) > 3000, path
               print(path, len(content))
+          for path in [Path("sports/basketball/the-nba-is-winning-the-numbers-game.pdf"), Path("culture/hip-hop/how-hip-hop-learned-to-sell-danger.pdf")]:
+              assert path.read_bytes().startswith(b"%PDF-") and path.stat().st_size > 3000, path
           PY
       - name: Commit generated editions
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add politics/2026-midterms/*.pdf
+          git add politics/2026-midterms/*.pdf sports/basketball/*.pdf culture/hip-hop/*.pdf
           if ! git diff --cached --quiet; then
             git commit -m "Build PDF reading editions from canonical Markdown"
             git push
