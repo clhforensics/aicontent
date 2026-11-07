@@ -18,6 +18,11 @@ FILES = [
     "04-missouri-early-warning-signals",
 ]
 
+EXTRA_FILES = [
+    "sports/basketball/the-nba-is-winning-the-numbers-game",
+    "culture/hip-hop/how-hip-hop-learned-to-sell-danger",
+]
+
 CSS = """
 @page {
   size: Letter;
@@ -47,8 +52,9 @@ code { font-family: monospace; font-size: 90%; }
 """
 
 def build(slug):
-    src = FOLDER / (slug + ".md")
-    out = FOLDER / (slug + ".pdf")
+    directory = ROOT if slug in EXTRA_FILES else FOLDER
+    src = directory / (slug + ".md")
+    out = directory / (slug + ".pdf")
     source = src.read_text(encoding="utf-8")
     body = markdown.markdown(source, extensions=["tables", "fenced_code", "sane_lists"])
     # Use file URL as base for relative links. HTML has no external stylesheets.
@@ -57,7 +63,7 @@ def build(slug):
     print(f"Created {out.relative_to(ROOT)} ({out.stat().st_size:,} bytes)")
 
 if __name__ == "__main__":
-    for slug in (sys.argv[1:] or FILES):
-        if slug not in FILES:
+    for slug in (sys.argv[1:] or FILES + EXTRA_FILES):
+        if slug not in FILES + EXTRA_FILES:
             raise SystemExit(f"Unknown article: {slug}")
         build(slug)
